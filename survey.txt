@@ -1,0 +1,41 @@
+Design the survey and data structure
+
+1. How was your overall mood this week?
+😄 Great – 🙂 Good – 😐 Okay – 😕 Not great – 😞 Bad
+
+2. How was your energy level this week?
+🔋 Very low – 💤 Low – 😌 Moderate – ⚡ High – 🔥 Very high
+
+3. How motivated did you feel to work on projects or learning this week?
+🧊 Not at all – 🌤️ A bit – 🙂 Somewhat – 💪 Quite – 🚀 Extremely
+
+4. What feelings describe your week? (Select all that apply)
+Happy - Motivated - Tired - Anxious - Indifferent - Connected - Overwhelmed
+Inspired - Calm - Focused - Other: _______
+
+5. Any short reflection or comment about your week? (optional)
+
+---
+How it Can be analyze
+Mood, energy, and motivation → numeric (1–5 scale)
+Feelings → count frequency of each term (bar chart or word cloud)
+Open comments → optional sentiment analysis
+
+---
+| Question      | Type                        |
+| ------------- | --------------------------- |
+| 1. Mood       | Multiple choice (5 options) |
+| 2. Energy     | Multiple choice (5 options) |
+| 3. Motivation | Multiple choice (5 options) |
+| 4. Feelings   | Checkbox (multi-select)     |
+| 5. Reflection | Open text (optional)        |
+
+1. How was your mood?
+Great - good - ok - neutral - bad - awful
+Excited, good, neutral, sad, anxious, angry 
+2. What was your energy level?
+not set - 0% - 20% - 40% - 60% - 80% - 100%
+3. How motivated were you?
+not set - 0% - 20% - 40% - 60% - 80% - 100%
+4. Describe how do you feel(?) (pick as many you want):
+Anxiety, inspiring, indifference
