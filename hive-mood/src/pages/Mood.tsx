@@ -1,4 +1,3 @@
-import CircularText from '../components/CircularText';
 import HiveMoodDashboard from '../components/Dashboard';
 
 const Mood = () => {

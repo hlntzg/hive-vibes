@@ -9,12 +9,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <button className="round-btn" onClick={toggleDarkMode}>🌓</button>
-      <Link to="/"><button className="round-btn">🏠</button></Link>
-      <Link to="/survey"><button className="round-btn">📝</button></Link>
-      <Link to="/hive-mood"><button className="round-btn"></button></Link>
+      <Link to="/"><h1>HIVE VIBES</h1></Link>
+      <div className="right-buttons">
+        <Link to="/survey"><button className="round-btn">ᝰ.ᐟ</button></Link>
+        <Link to="/hive-mood"><button className="round-btn">💬</button></Link>
+        <button className="round-btn" onClick={toggleDarkMode}>☾☼</button>
+      </div>
     </nav>
   );
 };
 
 export default Navbar;
+
+//➜]
+//🗪

@@ -187,11 +187,11 @@ const HiveMoodDashboard: React.FC = () => {
   const [activeMotivationIndex, setActiveMotivationIndex] = useState(0);
 
   return (
-    <div className="p-6  gap-8 bg-gray-50 min-h-screen">
+    <div className="p-6 gap-8 bg-gray-50 min-h-screen">
       {/* Top Mood */}
       <div className="bg-white shadow rounded-2xl p-6 flex flex-col items-center">
         <TextPressure
-          text={`Mood Level ${topMood}`}
+          text={`Hivers are feeling ${topMood}`}
           minFontSize={40}
           maxFontSize={100}
           className="font-bold text-yellow-500"
@@ -228,10 +228,10 @@ const HiveMoodDashboard: React.FC = () => {
             <Tooltip />
           </PieChart>
         </ResponsiveContainer>
-      </div>
+      {/* </div> */}
 
       {/* Motivation Pie */}
-      <div className="bg-white shadow rounded-2xl p-6 flex flex-col items-center">
+      {/* <div className="bg-white shadow rounded-2xl p-6 flex flex-col items-center"> */}
         <h2 className="text-xl font-semibold mb-4 text-center">
           Motivation Levels
         </h2>
@@ -260,7 +260,7 @@ const HiveMoodDashboard: React.FC = () => {
 
       {/* Feelings Treemap */}
       <div className="bg-white shadow rounded-2xl p-6 flex flex-col items-center">
-        <h2 className="text-xl font-semibold mb-4 text-center">Feelings Overview</h2>
+        <h2 className="text-xl mb-4 text-center">Feelings Overview</h2>
         <ResponsiveContainer width="100%" height={300}>
           <Treemap
             data={feelingsData}
