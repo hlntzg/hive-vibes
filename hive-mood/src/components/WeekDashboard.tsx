@@ -1,4 +1,5 @@
 import type { SurveyEntry } from '../utils/types';
+import FeelingsTreemap from './FeelingsTreemap';
 
 type WeekDashboardProps = {
   data: SurveyEntry[];
@@ -28,10 +29,19 @@ const WeekDashboard = ({ data }: WeekDashboardProps) => {
   console.log("Energy (avg):", avgEnergy.toFixed(1))
   console.log("Motivation (avg):", avgMotivation.toFixed(1))
 
+  // Suppose feelingCounts is a Record<string, number>
+const treemapData = Object.entries(feelingCounts)
+  .map(([feeling, count]) => ({ name: feeling, value: count }))
+  .filter(item => item.value > 0);
+
+
   return (
     <div className="bg-white p-6 rounded-2xl shadow-md">
       <h2 className="text-lg font-semibold mb-3">Weekly Summary</h2>
-
+      <div className="mt-6">
+        <h4 className="font-semibold mb-2">Feelings This Week</h4>
+        <FeelingsTreemap data={treemapData} title="Feelins This Week"/>
+      </div>
 
     </div>
   );
