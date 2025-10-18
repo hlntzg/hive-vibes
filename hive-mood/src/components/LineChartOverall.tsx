@@ -74,9 +74,9 @@ const LineChartOverall = ({ data, title, year }: LineChartOverallProps) => {
   return (
     <div className="w-full mt-12" style={{ height: "350px" }}>
       {title && (
-        <h2 className="text-xl font-semibold mb-4">
+        <h1 className="text-xl font-semibold mb-4">
           {title} {year ? `(${year})` : ""}
-        </h2>
+        </h1>
       )}
 
       <ResponsiveContainer width="100%" height={350}>
