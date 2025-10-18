@@ -7,7 +7,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 4,
     energy: 4,
     motivation: 5,
-    feelings: ["Motivated", "Energetic", "Hopeful"],
+    feelings: ["Motivated", "Focused", "Inspired"],  // Replaced "Energetic" and "Hopeful"
     reflection: "Started the year strong with new goals.",
   },
   {
@@ -15,7 +15,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 3,
     energy: 3,
     motivation: 3,
-    feelings: ["Focused", "Neutral"],
+    feelings: ["Focused", "Indifferent"],  // Replaced "Neutral"
     reflection: "Work was steady, just an average week.",
   },
   {
@@ -23,7 +23,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 2,
     energy: 2,
     motivation: 2,
-    feelings: ["Tired", "Unfocused"],
+    feelings: ["Tired", "Focused"],  // Replaced "Unfocused"
     reflection: "Winter slump hit hard this week.",
   },
   {
@@ -31,7 +31,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 5,
     energy: 5,
     motivation: 4,
-    feelings: ["Inspired", "Confident"],
+    feelings: ["Inspired", "Motivated"],  // Replaced "Confident"
     reflection: "Regained momentum after resting properly.",
   },
 
@@ -41,7 +41,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 3,
     energy: 3,
     motivation: 3,
-    feelings: ["Balanced", "Calm"],
+    feelings: ["Calm", "Focused"],  // Replaced "Balanced"
     reflection: "Smooth but uneventful week.",
   },
   {
@@ -49,7 +49,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 4,
     energy: 4,
     motivation: 4,
-    feelings: ["Focused", "Optimistic"],
+    feelings: ["Focused", "Motivated"],  // Replaced "Optimistic"
     reflection: "High productivity and good energy levels.",
   },
   {
@@ -57,7 +57,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 2,
     energy: 3,
     motivation: 2,
-    feelings: ["Tired", "Distracted"],
+    feelings: ["Tired", "Anxious"],  // Replaced "Distracted"
     reflection: "Struggled to stay focused toward the weekend.",
   },
 
@@ -67,7 +67,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 4,
     energy: 4,
     motivation: 4,
-    feelings: ["Motivated", "Calm"],
+    feelings: ["Motivated", "Calm"],  // This looks good as is
     reflection: "Feeling stable and consistent.",
   },
   {
@@ -75,7 +75,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 1,
     energy: 1,
     motivation: 1,
-    feelings: ["Exhausted", "Burnt Out"],
+    feelings: ["Tired", "Anxious"],  // Replaced "Exhausted" and "Burnt Out"
     reflection: "Completely drained — need serious rest.",
   },
   {
@@ -83,7 +83,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 3,
     energy: 3,
     motivation: 3,
-    feelings: ["Balanced", "Relaxed"],
+    feelings: ["Calm", "Motivated"],  // Replaced "Relaxed"
     reflection: "Recovering from last week’s burnout.",
   },
 
@@ -93,7 +93,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 5,
     energy: 4,
     motivation: 4,
-    feelings: ["Happy", "Motivated", "Calm"],
+    feelings: ["Happy", "Motivated", "Calm"],  // This looks good as is
     reflection: "Felt very productive and connected.",
   },
   {
@@ -101,7 +101,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 3,
     energy: 3,
     motivation: 3,
-    feelings: ["Tired", "Focused"],
+    feelings: ["Tired", "Anxious", "Focused"],  // This looks good as is
     reflection: "Workload manageable but energy dipped midweek.",
   },
   {
@@ -109,7 +109,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 2,
     energy: 2,
     motivation: 2,
-    feelings: ["Anxious", "Overwhelmed"],
+    feelings: ["Tired", "Anxious", "Overwhelmed"],  // This looks good as is
     reflection: "Need better rest and planning.",
   },
   {
@@ -117,7 +117,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 4,
     energy: 5,
     motivation: 5,
-    feelings: ["Inspired", "Motivated"],
+    feelings: ["Tired", "Inspired", "Motivated"],  // This looks good as is
     reflection: "Excellent flow and creativity.",
   },
   {
@@ -125,7 +125,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 5,
     energy: 5,
     motivation: 5,
-    feelings: ["Joyful", "Focused", "Inspired"],
+    feelings: ["Happy", "Focused", "Inspired"],  // This looks good as is
     reflection: "Outstanding week with amazing productivity.",
   },
   {
@@ -133,7 +133,7 @@ const mockSurveyData: SurveyEntry[] = [
     mood: 4,
     energy: 3,
     motivation: 4,
-    feelings: ["Motivated", "Inspired"],
+    feelings: ["Motivated", "Inspired"],  // This looks good as is
     reflection: "Strong finish with a few tired moments.",
   },
 ];
