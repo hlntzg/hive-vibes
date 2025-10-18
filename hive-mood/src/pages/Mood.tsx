@@ -42,8 +42,8 @@ const Mood = () => {
         Week #{currentWeekNumber} ({startOfWeek.toLocaleDateString()} -{" "}
         {endOfWeek.toLocaleDateString()})
       </h1>
-
-      <WeekDashboard data={currentWeekData} />
+ <WeekDashboard data={currentWeekData} />
+     
 
       <LineChartOverall
         data={yearlyData}
