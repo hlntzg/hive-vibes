@@ -37,7 +37,7 @@ const Mood = () => {
   );
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="page p-6 min-h-screen">
       <h1 className="text-2xl font-semibold mb-4">
         Week #{currentWeekNumber} ({startOfWeek.toLocaleDateString()} -{" "}
         {endOfWeek.toLocaleDateString()})

@@ -36,7 +36,7 @@ const WeekDashboard = ({ data }: WeekDashboardProps) => {
   const motivationData = getValueCounts('motivation');
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-md">
+    <div className="p-6 rounded-2xl border-4">
       <h2 className="text-lg font-semibold mb-3">Weekly Summary</h2>
 
       <div className="mt-6">
