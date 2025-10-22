@@ -19,13 +19,13 @@ const NumericScaleQuestion: React.FC<NumericScaleQuestionProps> = ({
 }) => {
   return (
     <div className="mb-4">
-      <label className="block font-semibold mb-1">{title}</label>
+      <label className="block font-semibold mb-12">{title}</label>
       <div className="flex flex-wrap gap-2">
         {Array.from({ length: maxScale }, (_, i) => {
           const num = i + 1;
           const label = labels?.[i] ?? num;
           return (
-            <label key={num} className="flex items-center gap-1">
+            <label key={num} className="flex text-3xl items-center gap-1">
               <input
                 type="radio"
                 name={name}

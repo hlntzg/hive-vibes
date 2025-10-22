@@ -96,7 +96,7 @@ const Survey: React.FC = () => {
             value={form.energy}
             onChange={(value) => setForm((f) => ({ ...f, energy: value }))}
             onCommit={() => setTimeout(nextStep, 120)}
-            labels={["Low", "", "", "", "High"]}
+            labels={["Zzz ...", "", "", "", "Woohoo!"]}
           />
         </div>
       ),
@@ -117,7 +117,7 @@ const Survey: React.FC = () => {
             value={form.motivation}
             onChange={(value) => setForm((f) => ({ ...f, motivation: value }))}
             onCommit={() => setTimeout(nextStep, 120)}
-            labels={["Low", "", "", "", "High"]}
+            labels={["Meh", "", "", "", "Let’s get sh*t done!!"]}
           />
         </div>
       ),
