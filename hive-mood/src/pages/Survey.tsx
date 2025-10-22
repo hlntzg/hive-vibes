@@ -72,7 +72,7 @@ const Survey: React.FC = () => {
             Take a moment to share how your week went. It only takes a few seconds!
           </p>
           <button
-            className="px-8 py-3 bg-blue-600 text-white text-lg rounded-full shadow hover:bg-blue-700 transition"
+            className="px-8 py-3 bg-black text-white text-lg rounded-xl shadow hover:bg-gray-500 transition"
             onClick={nextStep}
           >
             Start
@@ -84,8 +84,8 @@ const Survey: React.FC = () => {
       id: "energy",
       content: (
         <div className="flex flex-col items-center justify-center min-h-[250px] p-6">
-          <h2 className="text-2xl font-bold mb-2 text-center">2. Energy level</h2>
-          <p className="text-gray-500 mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-2 text-center">1. Energy level</h2>
+          <p className="text-gray-500 mb-12 text-center">
             How energetic did you feel this week?
           </p>
           <ProgressSlider
@@ -105,8 +105,8 @@ const Survey: React.FC = () => {
       id: "motivation",
       content: (
         <div className="flex flex-col items-center justify-center min-h-[250px] p-6">
-          <h2 className="text-2xl font-bold mb-2 text-center">3. Motivation level</h2>
-          <p className="text-gray-500 mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-2 text-center">2. Motivation level</h2>
+          <p className="text-gray-500 mb-12 text-center">
             How motivated were you to achieve your goals this week?
           </p>
           <ProgressSlider
@@ -126,7 +126,7 @@ const Survey: React.FC = () => {
       id: "mood",
       content: (
         <div className="flex flex-col items-center justify-center min-h-[250px] p-6">
-          <h2 className="text-2xl font-bold mb-2 text-center">1. How was your overall mood?</h2>
+          <h2 className="text-2xl font-bold mb-2 text-center">4. How was your overall mood?</h2>
           <p className="text-gray-500 mb-6 text-center">
             Select the emoji that best represents your week.
           </p>
@@ -148,7 +148,7 @@ const Survey: React.FC = () => {
       id: "feelings",
       content: (
         <div className="flex flex-col items-center justify-center min-h-[250px] p-6">
-          <h2 className="text-2xl font-bold mb-2 text-center">4. What feelings describe your week?</h2>
+          <h2 className="text-2xl font-bold mb-2 text-center">5. What feelings describe your week?</h2>
           <p className="text-gray-500 mb-4 text-center">Select all that apply</p>
           <div className="flex flex-wrap justify-center gap-3">
             {feelingsOptions.map((feeling) => (
@@ -156,7 +156,7 @@ const Survey: React.FC = () => {
                 key={feeling}
                 className={`px-4 py-2 border rounded-full cursor-pointer ${
                   form.feelings.includes(feeling)
-                    ? "bg-blue-600 text-white border-blue-600"
+                    ? "bg-black text-white"
                     : "bg-gray-100 border-gray-300"
                 }`}
               >
@@ -178,7 +178,7 @@ const Survey: React.FC = () => {
       id: "reflection",
       content: (
         <div className="flex flex-col items-center justify-center min-h-[250px] p-6">
-          <h2 className="text-2xl font-bold mb-2 text-center">5. Reflection (optional)</h2>
+          <h2 className="text-2xl font-bold mb-2 text-center">Reflection (optional)</h2>
           <p className="text-gray-500 mb-4 text-center">
             Any thoughts or highlights from your week?
           </p>
@@ -201,7 +201,7 @@ const Survey: React.FC = () => {
             Click below to submit your responses.
           </p>
           <button
-            className="px-8 py-3 bg-green-600 text-white text-lg rounded-full shadow hover:bg-green-700 transition"
+            className="px-8 py-3 bg-black text-white text-lg rounded-xl shadow hover:bg-gray-500 transition"
             onClick={handleSubmit}
           >
             Submit

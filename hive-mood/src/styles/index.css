@@ -23,3 +23,25 @@ body {
 .page {
   padding: 20px;
 }
+
+.slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: url('/hive.svg') center/contain no-repeat;
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+
+.slider-thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Firefox version */
+/* .slider-thumb::-moz-range-thumb {} */
+.slider-thumb::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}

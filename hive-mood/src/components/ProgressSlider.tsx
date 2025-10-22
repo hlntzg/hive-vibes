@@ -1,4 +1,3 @@
-// ProgressSlider.tsx
 import React from "react";
 
 interface ProgressSliderProps {
@@ -29,22 +28,26 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
   const handleMouseUp = (e: React.MouseEvent<HTMLInputElement>) => {
     onCommit?.(Number((e.target as HTMLInputElement).value));
   };
-  const handleTouchEnd = (e: React.TouchEvent<HTMLInputElement>) => {
+
+  const handleTouchEnd = () => {
     onCommit?.(value);
   };
 
   return (
-    <div className="mb-6">
+    <div className="mb-6 w-full max-w-md mx-auto">
       {title && <label className="block font-semibold mb-2">{title}</label>}
 
       <div className="relative w-full">
-        <div className="h-2 bg-gray-200 rounded-full">
+        {/* Background bar */}
+        <div className="h-4 bg-gray-200 rounded-full">
+          {/* Filled portion */}
           <div
-            className="h-2 rounded-full transition-all"
-            style={{ width: `${pct}%`, background: "linear-gradient(90deg,#f97316,#06b6d4)" }}
+            className="h-4 bg-black rounded-full transition-all"
+            style={{ width: `${pct}%` }}
           />
         </div>
 
+        {/* Range input (transparent, on top of bar) */}
         <input
           aria-label={title}
           type="range"
@@ -56,13 +59,13 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
           onChange={(e) => onChange(Number(e.target.value))}
           onMouseUp={handleMouseUp}
           onTouchEnd={handleTouchEnd}
-          className="w-full absolute top-0 left-0 appearance-none bg-transparent h-6 cursor-pointer"
+          className="slider-thumb w-full absolute top-0 left-0 appearance-none bg-transparent cursor-pointer"
           style={{ WebkitAppearance: "none" }}
         />
       </div>
 
       {labels && (
-        <div className="flex justify-between text-sm mt-2 text-gray-600">
+        <div className="flex justify-between text-sm mt-4 text-gray-600">
           {labels.map((l, i) => (
             <span key={i}>{l}</span>
           ))}
