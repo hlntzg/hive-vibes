@@ -97,7 +97,7 @@ const mockSurveyData: SurveyEntry[] = [
     reflection: "Felt very productive and connected.",
   },
   {
-    week: "2025-10-14",
+    week: "2025-10-21",
     mood: 3,
     energy: 3,
     motivation: 3,
@@ -105,7 +105,7 @@ const mockSurveyData: SurveyEntry[] = [
     reflection: "Workload manageable but energy dipped midweek.",
   },
   {
-    week: "2025-10-15",
+    week: "2025-10-21",
     mood: 2,
     energy: 2,
     motivation: 2,
@@ -113,7 +113,7 @@ const mockSurveyData: SurveyEntry[] = [
     reflection: "Need better rest and planning.",
   },
   {
-    week: "2025-10-16",
+    week: "2025-10-21",
     mood: 4,
     energy: 5,
     motivation: 5,
@@ -121,7 +121,7 @@ const mockSurveyData: SurveyEntry[] = [
     reflection: "Excellent flow and creativity.",
   },
   {
-    week: "2025-10-20",
+    week: "2025-10-21",
     mood: 5,
     energy: 5,
     motivation: 5,
